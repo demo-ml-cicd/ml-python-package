@@ -1,3 +1,5 @@
+import pickle
+
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LinearRegression
