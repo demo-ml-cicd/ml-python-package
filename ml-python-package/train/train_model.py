@@ -12,7 +12,7 @@ def train_model(features: pd.DataFrame, target: pd.Series, model_type: str):
 def build_model(model_type: str):
     if model_type == "RandomForestRegressor":
         model = RandomForestClassifier(
-            n_estimators=100, random_state=train_params.random_state
+            n_estimators=100, random_state=30
         )
     elif model_type == "LinearRegression":
         model = LinearRegression()
