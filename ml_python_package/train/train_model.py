@@ -6,10 +6,8 @@ from sklearn.linear_model import LinearRegression
 
 
 def build_model(model_type: str):
-    if model_type == "RandomForestRegressor":
+    if model_type == "RandomForestClassifier":
         model = RandomForestClassifier(n_estimators=100, random_state=30)
-    elif model_type == "LinearRegression":
-        model = LinearRegression()
     else:
         raise RuntimeError(f"Bad model_type -- {model_type}")
     return model
