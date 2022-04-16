@@ -16,6 +16,7 @@ def build_model(model_type: str):
 def train_model(features: pd.DataFrame, target: pd.Series, model_type: str):
     model = build_model(model_type)
     model.fit(features, target)
+    
     return model
 
 
