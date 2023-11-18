@@ -7,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 
 def build_model(model_type: str):
     if model_type == "RandomForestClassifier":
+        # fixes to test CI randomForestClassifier 55.13
         model = RandomForestClassifier(n_estimators=100, random_state=30)
     else:
         raise RuntimeError(f"Bad model_type -- {model_type}")
